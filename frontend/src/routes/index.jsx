@@ -1,5 +1,9 @@
-import Home from "views/Home/Home.jsx";
-import Login from "views/Login/Login.jsx"
+import React from 'react';
+
+
+const Home = React.lazy(() => import('views/Home/Home.jsx'));
+const Login = React.lazy(() => import('views/Login/Login.jsx'));
+
 
 var indexRoutes = [
   { path: "/login", name: "Home", component: Login },
